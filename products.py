@@ -60,3 +60,4 @@ class Product:
         self.set_quantity(updated_quantity)
 
         return total_price
+
