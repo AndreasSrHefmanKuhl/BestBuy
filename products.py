@@ -1,6 +1,8 @@
 
 class Product:
 
+
+
     def __init__(self ,name=str ,price=float ,quantity=int):
 
         if not name:
