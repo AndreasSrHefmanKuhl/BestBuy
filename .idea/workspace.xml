@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d4a802a-0010-4b66-bd7b-151eb910d616" name="Changes" comment="initial commmit &lt;3">
+    <list default="true" id="8d4a802a-0010-4b66-bd7b-151eb910d616" name="Changes" comment="made setter and getter method for quantity + activate ability with activate deactivate plus status check of active">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.py" beforeDir="false" afterPath="$PROJECT_DIR$/products.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <updated>1760966387366</updated>
       <workItem from="1760966388375" duration="732000" />
       <workItem from="1760967252039" duration="436000" />
-      <workItem from="1760982208890" duration="696000" />
+      <workItem from="1760982208890" duration="2819000" />
     </task>
     <task id="LOCAL-00001" summary="initial commmit &lt;3">
       <option name="closed" value="true" />
@@ -85,7 +86,55 @@
       <option name="project" value="LOCAL" />
       <updated>1760967274391</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commmit &lt;3">
+      <option name="closed" value="true" />
+      <created>1760982933746</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760982933746</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial commmit &lt;3">
+      <option name="closed" value="true" />
+      <created>1760982949732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760982949732</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial commmit &lt;3">
+      <option name="closed" value="true" />
+      <created>1760982952608</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760982952608</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initial commmit &lt;3">
+      <option name="closed" value="true" />
+      <created>1760982955390</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760982955390</updated>
+    </task>
+    <task id="LOCAL-00006" summary="initial commmit &lt;3 + class init method">
+      <option name="closed" value="true" />
+      <created>1760982989037</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760982989037</updated>
+    </task>
+    <task id="LOCAL-00007" summary="made setter and getter method for quantity + activate ability with activate deactivate plus status check of active">
+      <option name="closed" value="true" />
+      <created>1760983775712</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760983775712</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +153,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commmit &lt;3" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commmit &lt;3" />
+    <MESSAGE value="initial commmit &lt;3 + class init method" />
+    <MESSAGE value="made setter and getter method for quantity + activate ability with activate deactivate plus status check of active" />
+    <option name="LAST_COMMIT_MESSAGE" value="made setter and getter method for quantity + activate ability with activate deactivate plus status check of active" />
   </component>
 </project>

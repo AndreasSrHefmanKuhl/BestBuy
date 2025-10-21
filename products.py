@@ -35,3 +35,6 @@ class Product:
     def is_active(self):
         return self.active
 
+    def show(self):
+        print(f"{self.name}, Price:{self.price}, Quantity:{self.quantity}")
+
