@@ -1,3 +1,5 @@
+from typing import List, Tuple
+
 from products import Product
 
 """Step 2 - Store Class
@@ -80,7 +82,29 @@ class Store:
             total += product.get_quantity()
         return total
 
-    def
+    def get_all_products(self) -> List[Product]:
+
+        return [product for product in self.products if product.is_active()]
+
+
+    def order(self, shopping_list: List[Tuple[Product, int]]) -> float:
+
+        total_price = 0.0
+        print("\n--- Processing Order ---")
+
+        for product, quantity in shopping_list:
+            try:
+                item_price = product.buy(quantity)
+                total_price += item_price
+                print(f"Purchased{quantity} x {product.name} for ${item_price:.2f}")
+            except Exception as e:
+                print(f"Order failed for item {product.name}: {e}")
+                raise Exception(f"Order failure. Halting purchase: {e}")
+
+        print("--- Order Complete ---")
+        return total_price
+
+
 
 
 
