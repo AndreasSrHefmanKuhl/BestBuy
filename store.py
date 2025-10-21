@@ -54,5 +54,12 @@ class Store:
 
         self.products = products
 
+    def add_product(self,product:Product):
+
+        self.products.append(product)
+        return f"{product} has been added to the store"#
+
+
+
 
 
