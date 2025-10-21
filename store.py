@@ -67,12 +67,20 @@ class Store:
         return f"{product} has been added to the store"#
 
     def remove_product(self,product:list[Product]):
+
         try:
             self.products.remove(product)
         except ValueError:
             print(f"Warning: Product '{product.name}' not found in store and could not be removed.")
 
+    def get_total_quantity(self) -> int:
 
+        total = 0
+        for product in self.products:
+            total += product.get_quantity()
+        return total
+
+    def
 
 
 
