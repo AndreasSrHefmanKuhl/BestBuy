@@ -13,15 +13,12 @@ def list_products(store_instance: store.Store):
         return
 
     for i, product in enumerate(active_products):
-
-        print(f"{i + 1}. ", end="")
-        product.show()
+        print(f"{i + 1}. {product.show()}")
     print("--------------------------------")
 
 
 def make_order(store_instance: store.Store):
     """Guides user through creating and placing an order."""
-
 
     active_products = store_instance.get_all_products()
 
@@ -40,7 +37,6 @@ def make_order(store_instance: store.Store):
         try:
             choice = input("Enter product number to add (or 0 to finalize order): ")
 
-            # This is the product index
             product_index = int(choice) - 1
 
             if product_index < -1:
@@ -62,6 +58,15 @@ def make_order(store_instance: store.Store):
                     print("Quantity must be a positive number.")
                     continue
 
+                # --- Immediate Quantity Check ---
+                if quantity > selected_product.get_quantity():
+                    print(
+                        f"❌ Insufficient stock! Only {selected_product.get_quantity()} "
+                        f"units of {selected_product.name} available. Please try again."
+                    )
+                    continue
+                # ----------------------------------------
+
                 shopping_list.append((selected_product, quantity))
                 print(f"Added {quantity} x {selected_product.name} to cart.")
 
@@ -72,7 +77,6 @@ def make_order(store_instance: store.Store):
         except ValueError:
             print("Invalid input. Please enter a number.")
         except Exception as e:
-            # Catching generic exceptions just in case
             print(f"An unexpected error occurred during selection: {e}")
 
     if not shopping_list:

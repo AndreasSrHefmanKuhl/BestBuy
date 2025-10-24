@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d4a802a-0010-4b66-bd7b-151eb910d616" name="Changes" comment="made setter and getter method for quantity + activate ability with activate deactivate plus status check of active">
+    <list default="true" id="8d4a802a-0010-4b66-bd7b-151eb910d616" name="Changes" comment="fixed store class too">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products.py" beforeDir="false" afterPath="$PROJECT_DIR$/products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.py" beforeDir="false" afterPath="$PROJECT_DIR$/store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.store.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -59,6 +63,36 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BestBuy" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -76,7 +110,9 @@
       <updated>1760966387366</updated>
       <workItem from="1760966388375" duration="732000" />
       <workItem from="1760967252039" duration="436000" />
-      <workItem from="1760982208890" duration="2819000" />
+      <workItem from="1760982208890" duration="18070000" />
+      <workItem from="1761068473571" duration="167000" />
+      <workItem from="1761282409095" duration="3012000" />
     </task>
     <task id="LOCAL-00001" summary="initial commmit &lt;3">
       <option name="closed" value="true" />
@@ -134,7 +170,159 @@
       <option name="project" value="LOCAL" />
       <updated>1760983775712</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="defined show method">
+      <option name="closed" value="true" />
+      <created>1761031084378</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761031084378</updated>
+    </task>
+    <task id="LOCAL-00009" summary="build show method">
+      <option name="closed" value="true" />
+      <created>1761031698279</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1761031698279</updated>
+    </task>
+    <task id="LOCAL-00010" summary="finished Product clas + test main">
+      <option name="closed" value="true" />
+      <created>1761033278163</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761033278163</updated>
+    </task>
+    <task id="LOCAL-00011" summary="created class with init store">
+      <option name="closed" value="true" />
+      <created>1761034009858</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761034009858</updated>
+    </task>
+    <task id="LOCAL-00012" summary="created add_product method">
+      <option name="closed" value="true" />
+      <created>1761034204924</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1761034204924</updated>
+    </task>
+    <task id="LOCAL-00013" summary="created remove_product method">
+      <option name="closed" value="true" />
+      <created>1761035766574</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1761035766574</updated>
+    </task>
+    <task id="LOCAL-00014" summary="created get_total_quantity method">
+      <option name="closed" value="true" />
+      <created>1761035858100</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1761035858100</updated>
+    </task>
+    <task id="LOCAL-00015" summary="created get_all_products method">
+      <option name="closed" value="true" />
+      <created>1761035938913</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1761035938913</updated>
+    </task>
+    <task id="LOCAL-00016" summary="created store plus order method">
+      <option name="closed" value="true" />
+      <created>1761037211159</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1761037211159</updated>
+    </task>
+    <task id="LOCAL-00017" summary="store test in main, overwritten">
+      <option name="closed" value="true" />
+      <created>1761037940192</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1761037940192</updated>
+    </task>
+    <task id="LOCAL-00018" summary="killed test logic for user interface">
+      <option name="closed" value="true" />
+      <created>1761040112569</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1761040112569</updated>
+    </task>
+    <task id="LOCAL-00019" summary="created list_product ui function">
+      <option name="closed" value="true" />
+      <created>1761041779514</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1761041779514</updated>
+    </task>
+    <task id="LOCAL-00020" summary="started creating an order function to guide user through the order, added check if product is in stock, defined quantity input">
+      <option name="closed" value="true" />
+      <created>1761045917254</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1761045917254</updated>
+    </task>
+    <task id="LOCAL-00021" summary="finished order function, and start function, forgot to commit">
+      <option name="closed" value="true" />
+      <created>1761047913325</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1761047913325</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added ui_functions data for better split between front and back end">
+      <option name="closed" value="true" />
+      <created>1761048016024</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1761048016024</updated>
+    </task>
+    <task id="LOCAL-00023" summary="putted all ui functions in functions, and fixed main for import">
+      <option name="closed" value="true" />
+      <created>1761048242934</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1761048242934</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added doc string for every function">
+      <option name="closed" value="true" />
+      <created>1761048337787</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1761048337787</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fixed store class too">
+      <option name="closed" value="true" />
+      <created>1761048841850</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1761048841850</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fixed store class too">
+      <option name="closed" value="true" />
+      <created>1761068588756</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1761068588756</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +343,28 @@
     <MESSAGE value="initial commmit &lt;3" />
     <MESSAGE value="initial commmit &lt;3 + class init method" />
     <MESSAGE value="made setter and getter method for quantity + activate ability with activate deactivate plus status check of active" />
-    <option name="LAST_COMMIT_MESSAGE" value="made setter and getter method for quantity + activate ability with activate deactivate plus status check of active" />
+    <MESSAGE value="defined show method" />
+    <MESSAGE value="build show method" />
+    <MESSAGE value="finished Product clas + test main" />
+    <MESSAGE value="created class with init store" />
+    <MESSAGE value="created add_product method" />
+    <MESSAGE value="created remove_product method" />
+    <MESSAGE value="created get_total_quantity method" />
+    <MESSAGE value="created get_all_products method" />
+    <MESSAGE value="created store plus order method" />
+    <MESSAGE value="store test in main, overwritten" />
+    <MESSAGE value="killed test logic for user interface" />
+    <MESSAGE value="created list_product ui function" />
+    <MESSAGE value="started creating an order function to guide user through the order, added check if product is in stock, defined quantity input" />
+    <MESSAGE value="finished order function, and start function, forgot to commit" />
+    <MESSAGE value="added ui_functions data for better split between front and back end" />
+    <MESSAGE value="putted all ui functions in functions, and fixed main for import" />
+    <MESSAGE value="added doc string for every function" />
+    <MESSAGE value="fixed store class too" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed store class too" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BestBuy$store.coverage" NAME="store Coverage Results" MODIFIED="1761037886100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BestBuy$main.coverage" NAME="main Coverage Results" MODIFIED="1761287756727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

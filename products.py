@@ -1,26 +1,27 @@
+# products.py
+
 class Product:
     """
     Represents a specific type of product available in the store.
-
-    It encapsulates information including the product's name, price, quantity, 
-    and active status.
+    Encapsulates information including the product's name, price,
+    quantity, and active status.
     """
 
     def __init__(self, name: str, price: float, quantity: int):
         """
         Initializes a new Product instance.
 
-        :param name: The name of the product (str).
-        :param price: The price per unit (float, must be non-negative).
-        :param quantity: The initial stock quantity (int, must be non-negative).
-        :raises Exception: If name is empty, or price or quantity are negative.
+        :param name: Product name (non-empty string).
+        :param price: Price per unit (float, non-negative).
+        :param quantity: Initial stock (int, non-negative).
+        :raises Exception: If validation fails.
         """
         if not name:
-            raise Exception("Product name cant be empty")
+            raise Exception("Product name can't be empty.")
         if price < 0:
-            raise Exception("Price can not be negative")
+            raise Exception("Price cannot be negative.")
         if quantity < 0:
-            raise Exception("If quantity is below zero , we can not sell or buy any")
+            raise Exception("Quantity cannot be negative.")
 
         self.name = name
         self.price = price
@@ -28,79 +29,48 @@ class Product:
         self.active = True
 
     def get_quantity(self) -> int:
-        """ 
-        Getter method for quantity.
-
-        :return: The current stock quantity of the product (int).
-        """
+        """Returns the current stock quantity."""
         return self.quantity
 
     def set_quantity(self, quantity: int):
         """
-        Setter method for quantity.
-
-        Updates the stock quantity and deactivates the product if the 
-        new quantity reaches zero.
-
-        :param quantity: The new stock quantity (int).
-        :return: None
+        Updates the stock quantity and deactivates product if it reaches zero.
         """
+        if quantity < 0:
+            raise Exception("Quantity cannot be negative.")
         self.quantity = quantity
         if self.quantity == 0:
             self.deactivate()
 
     def activate(self):
-        """
-        Sets the product's active status to True.
-
-        :return: True, representing the new active status. 
-                 (Note: This should typically set the internal state, 
-                 and return nothing, but based on your implementation, it returns True).
-        """
-        return self.active == True
+        """Sets the product as active."""
+        self.active = True
 
     def deactivate(self):
-        """
-        Sets the product's active status to False.
-
-        :return: False, representing the new active status.
-                 (Note: This should typically set the internal state, 
-                 and return nothing, but based on your implementation, it returns False).
-        """
-        return self.active == False
+        """Sets the product as inactive."""
+        self.active = False
 
     def is_active(self) -> bool:
-        """
-        Checks if the product is currently active and available for sale.
-
-        :return: True if the product is active, False otherwise (bool).
-        """
+        """Checks if the product is active."""
         return self.active
 
-    def show(self):
-        """
-        Prints a string representation of the product's current state.
-
-        Format: "Name, Price: [price], Quantity: [quantity]"
-
-        :return: None (prints to console).
-        """
-        print(f"{self.name}, Price:{self.price}, Quantity:{self.quantity}")
+    def show(self) -> str:
+        """Returns a string describing the product."""
+        return f"{self.name}, Price: {self.price}, Quantity: {self.quantity}"
 
     def buy(self, quantity: int) -> float:
         """
-        Processes a purchase of a specified quantity of the product.
+        Processes a purchase for a given quantity.
 
-        Updates the product's stock quantity and returns the total purchase price.
-
-        :param quantity: The amount of the product to buy (int).
-        :return: The total price of the purchase (float).
-        :raises Exception: If the product is inactive, insufficient quantity is 
-                           available, or the quantity to buy is non-positive.
+        :param quantity: Number of units to buy.
+        :return: Total price for the purchase.
+        :raises Exception: For invalid or unavailable purchases.
         """
-
         if not self.is_active():
             raise Exception(f"Cannot buy {self.name}: Product is inactive.")
+
+        if quantity <= 0:
+            raise Exception("Quantity to buy must be positive.")
 
         if quantity > self.quantity:
             raise Exception(
@@ -108,11 +78,6 @@ class Product:
                 f"Only {self.quantity} available."
             )
 
-        if quantity <= 0:
-            raise Exception("Quantity to buy must be a positive integer.")
-
-        total_price = (self.price * quantity)
-        updated_quantity = (self.quantity - quantity)
-        self.set_quantity(updated_quantity)
-
+        total_price = self.price * quantity
+        self.set_quantity(self.quantity - quantity)
         return total_price
